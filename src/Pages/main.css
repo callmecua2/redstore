@@ -1,0 +1,92 @@
+.categories ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 8px 8px;
+  margin-right: 20px;
+}
+
+.categories ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.categories ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #f9004d;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.categories ul li a:hover::after {
+  width: 100%;
+}
+
+.search-input {
+  margin-top: 1rem;
+  border: 2px solid black;
+}
+
+.search-input::placeholder {
+  padding-left: 5px;
+}
+
+
+
+.pricing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #bed6fb;
+  border-radius: 99em 0 0 99em;
+  display: flex;
+  align-items: center;
+  padding: 0.625em 0.75em;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #425475;
+}
+
+
+.inner-products {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: whitesmoke;
+}
+
+.inner-products:hover {
+  transform: translateY(-5px); /* Mengangkat elemen sedikit ke atas */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan */
+}
+
+.inner-products img{
+  border-radius: 15px;
+}
+
+.inner-products p {
+  margin-top: 1rem;
+}
+
+.inner-products button {
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Pusatkan secara horizontal relatif ke elemen induk */
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+}
+
+
+.active-button {
+  background: rgb(235, 235, 244);
+  background: linear-gradient(
+    90deg,
+    rgba(235, 235, 244, 1) 0%,
+    rgba(176, 177, 189, 1) 100%,
+    rgba(26, 29, 89, 1) 100%
+  );
+}
